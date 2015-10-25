@@ -1,0 +1,22 @@
+
+<div class="container">
+    <div class="col-sm-3 col-sm-offset-4">
+        <h1><span class="fa fa-sign-in"></span> Login</h1>
+            <div class="loginForm" ng-controller = "LoginController">
+                <!--<form action="/" method="POST">-->
+                <div>
+                    <label for="username">Username:</label>
+                    <input ng-model="username" class="form-control" type="text" name="username" id="username"/>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input ng-model="password" class="form-control" type="password" name="password" id="password"/>
+                </div>
+                <div>
+                    <input type="button" class="btn btn-warning btn-lg" ng-click="sendFunction()" value="Log In"/>
+                    <p>Already have an account? <a href="/login">Login</a></p>
+                </div>
+            <!--</form>-->
+            </div>
+    </div>
+</div>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Venue review</title>
+    <link rel="stylesheet" href="/stylesheets/index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+    <script src="/vendors/angular/angular.min.js"></script>
+    <script src="/vendors/angular-route/angular-route.min.js"></script>
+    <!--<script src="/vendors/angular-route/angular-route.min.js.map"></script>-->
+    <script src="/javascripts/client.js"></script>
+    <script src="/javascripts/HomeController.js"></script>
+    <script src="/javascripts/RegisterController.js"></script>
+    <script src="/javascripts/VenueController.js"></script>
+    <script src="/javascripts/LoginController.js"></script>
+    <base href="/">
+</head>
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Venue</a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="/venuePage"><i class="fa fa-music"></i> Venues</a></li>
+                <li><a href="/register"><i class="fa fa-user-plus"></i> Register</a></li>
+                <li><a href="/login"><i class="fa fa-sign-in"></i> Log In</a></li>
+            </ul>
+        </div>
+    </nav>
+<!--</header>-->
+
+    <!--<div class="loginForm" ng-controller = "LoginController">-->
+        <!--&lt;!&ndash;<form action="/" method="POST">&ndash;&gt;-->
+            <!--<div>-->
+                <!--<label for="username">Username:</label>-->
+                <!--<input ng-model="username" type="text" name="username" id="username"/>-->
+            <!--</div>-->
+            <!--<div>-->
+                <!--<label for="password">Password:</label>-->
+                <!--<input ng-model="password" type="password" name="password" id="password"/>-->
+            <!--</div>-->
+            <!--<div>-->
+                <!--<input type="button" ng-click="sendFunction()" value="Log In"/>-->
+               <!--<md-button class="md-raised md-primary"><a href="/register">Register</a></md-button>-->
+            <!--</div>-->
+        <!--&lt;!&ndash;</form>&ndash;&gt;-->
+    <!--</div>-->
+</header>
+<!--<ul>-->
+    <!--<li><a href="/">Home</a></li>-->
+    <!--<li><a href="/venuePage">Venue Page</a></li>-->
+<!--</ul>-->
+
+
+<div id="main">
+    <ng-view>
+
+    </ng-view>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted">Place sticky footer content here.</p>
+        </div>
+    </footer>
+
+</div>
+</body>
+</html>

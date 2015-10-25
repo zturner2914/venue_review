@@ -1,0 +1,50 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+    <!--&lt;!&ndash;<meta charset="utf-8">&ndash;&gt;-->
+    <!--&lt;!&ndash;<meta http-equiv="X-UA-Compatible" content="IE=edge">&ndash;&gt;-->
+    <!--&lt;!&ndash;<meta name="viewport" content="width=device-width, initial-scale=1">&ndash;&gt;-->
+    <!--&lt;!&ndash;<title></title>&ndash;&gt;-->
+    <!--&lt;!&ndash;<link href="vendors/bootstrap/dist/css/bootstrap.css">&ndash;&gt;-->
+    <!--&lt;!&ndash;<link rel="stylesheet" href="/stylesheets/register.css">&ndash;&gt;-->
+<!--</head>-->
+<!--<body>-->
+<div class="container">
+    <div class="col-sm-3 col-sm-offset-4">
+        <h1><span class="fa fa-user-plus"></span> Register</h1>
+
+        <div class="registerForm" ng-controller = "RegisterController">
+        <!--<form action="/register" method="POST">-->
+            <div>
+                <label for="username">Username:</label>
+                <input ng-model="username" class="form-control" type="text" name="username" id="username"/>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input ng-model="password" class="form-control" type="password" name="password" id="password"/>
+            </div>
+            <div>
+                <input type="button" class="btn btn-warning btn-lg" ng-click="sendRegister()" value="Register"/>
+                <p>Already have an account? <a href="/login">Login</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+    <!--</form>-->
+
+<!--<div class="container">-->
+
+    <!--<form action="/register" method="POST" class="form-signin">-->
+        <!--<h2 class="form-signin-heading">Please Register</h2>-->
+        <!--<label for="username">Username</label>-->
+        <!--<input type="text" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>-->
+        <!--<label for="inputPassword" class="sr-only">Password</label>-->
+        <!--<input type="password" id="inputPassword" class="form-control" placeholder="Password" required>-->
+        <!--<button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>-->
+    <!--</form>-->
+
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+<!--<p>{{message}}</p>-->
+<!--</body>-->
+<!--</html>-->
