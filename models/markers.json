@@ -1,0 +1,215 @@
+{
+  "type":"FeatureCollection",
+  "features":[
+    {
+      "type":"Feature",
+      "properties":{
+        "id":"marker-ig75txyl6",
+        "title":"318 1st Ave N",
+        "message":"Fine Line Music Cafe",
+        "marker-size":"medium",
+        "marker-color":"#1087bf",
+        "marker-symbol":"music"
+      },
+      "geometry":{
+        "coordinates":[
+          -93.271641,
+          44.981936
+        ],
+        "type":"Point"
+      },
+      "id":"033280a02127c336970ec948d185ade9"
+    },
+    {
+      "type":"Feature",
+      "properties":{
+        "id":"marker-ig762csd9",
+        "title":"711 Hennepin Ave",
+        "message":"Skyway Theater",
+        "marker-size":"medium",
+        "marker-color":"#1087bf",
+        "marker-symbol":"music"
+      },
+      "geometry":{
+        "coordinates":[
+          -93.274927,
+          44.977412
+        ],
+        "type":"Point"
+      },
+      "id":"3987afd2423a78092bea56c04e3d9f65"
+    },
+    {
+      "type":"Feature",
+      "properties":{
+        "id":"marker-ig75qz8c4",
+        "title":"629 Cedar Ave S",
+        "message":"Triple Rock Social Club",
+        "marker-size":"medium",
+        "marker-color":"#1087bf",
+        "marker-symbol":"music"
+      },
+      "geometry":{
+        "coordinates":[
+          -93.246973,
+          44.966896
+        ],
+        "type":"Point"
+      },
+      "id":"3f9b86317f2054bf2d734fc6ddfc0043"
+    },
+    {
+      "type":"Feature",
+      "properties":{
+        "id":"marker-ig75gdou0",
+        "title":"701 1st Ave N",
+        "message":"First Ave",
+        "marker-size":"medium",
+        "marker-color":"#1087bf",
+        "marker-symbol":"music"
+      },
+      "geometry":{
+        "coordinates":[
+          -93.276083,
+          44.978286
+        ],
+        "type":"Point"
+      },
+      "id":"5ed18523e426416f4f40cccf78d8047a"
+    },
+    {
+      "type":"Feature",
+      "properties":{
+        "id":"marker-ig75m6pv2",
+        "title":"600 1st Ave N",
+        "message":"Target Center",
+        "marker-size":"medium",
+        "marker-color":"#1087bf",
+        "marker-symbol":"music"
+      },
+      "geometry":{
+        "coordinates":[
+          -93.276091,
+          44.979572
+        ],
+        "type":"Point"
+      },
+      "id":"5fbdf520b424c7c99031e9774a10bc55"
+    },
+    {
+      "type":"Feature",
+      "properties":{
+        "id":"marker-ig75seqv5",
+        "title":"111 N 5th St",
+        "message":"Mill City Nights",
+        "marker-size":"medium",
+        "marker-color":"#1087bf",
+        "marker-symbol":"music"
+      },
+      "geometry":{
+        "coordinates":[
+          -93.274369,
+          44.980446
+        ],
+        "type":"Point"
+      },
+      "id":"7252dda72325c9727c012bc990d27117"
+    },
+    {
+      "type":"Feature",
+      "properties":{
+        "id":"marker-ig75o06f3",
+        "title":"1308 4th St SE",
+        "message":"Varsity Theater",
+        "marker-size":"medium",
+        "marker-color":"#1087bf",
+        "marker-symbol":"music"
+      },
+      "geometry":{
+        "coordinates":[
+          -93.236857,
+          44.980567
+        ],
+        "type":"Point"
+      },
+      "id":"8aaff78159eca8d45f431793c155259f"
+    },
+    {
+      "type":"Feature",
+      "properties":{
+        "id":"marker-ig75ziof8",
+        "title":"1010 Nicollet Mall",
+        "message":"Dakota Jazz Club",
+        "marker-size":"medium",
+        "marker-color":"#1087bf",
+        "marker-symbol":"music"
+      },
+      "geometry":{
+        "coordinates":[
+          -93.275239,
+          44.973731
+        ],
+        "type":"Point"
+      },
+      "id":"a5a6ade0954826455332eb488a5c046b"
+    },
+    {
+      "type":"Feature",
+      "properties":{
+        "id":"marker-cig744ip40eottama5x6hfzjc",
+        "title":"Welcome to Mapbox!",
+        "message":"",
+        "marker-size":"medium",
+        "marker-color":"#3887be",
+        "marker-symbol":"embassy"
+      },
+      "geometry":{
+        "coordinates":[
+          -93.263801,
+          44.979999
+        ],
+        "type":"Point"
+      },
+      "id":"cig744itw0001tama9vdygi4t"
+    },
+    {
+      "type":"Feature",
+      "properties":{
+        "id":"marker-ig75wpon7",
+        "title":"910 Hennepin Ave",
+        "message":"Orpheum Theatre",
+        "marker-size":"medium",
+        "marker-color":"#1087bf",
+        "marker-symbol":"music"
+      },
+      "geometry":{
+        "coordinates":[
+          -93.277907,
+          44.976597
+        ],
+        "type":"Point"
+      },
+      "id":"ef2d8c2b3d9f5f5b4caec1c8cd4bb232"
+    },
+    {
+      "type":"Feature",
+      "properties":{
+        "id":"marker-ig75j6it1",
+        "title":"917 Cedar Ave S",
+        "message":"The Cabooze",
+        "marker-size":"medium",
+        "marker-color":"#1087bf",
+        "marker-symbol":"music"
+      },
+      "geometry":{
+        "coordinates":[
+          -93.246802,
+          44.963384
+        ],
+        "type":"Point"
+      },
+      "id":"f12ffad3e0ed6fa118bed4f0a2806cc1"
+    }
+  ],
+  "id":"zturner29.cig744i180eoqtama9b08yil5"
+}

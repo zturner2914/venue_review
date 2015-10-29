@@ -1,4 +1,4 @@
-var app = angular.module('myApp', ['ngRoute']);
+var app = angular.module('app', ['ngRoute', 'angular-mapbox', 'ngMaterial']);
 
 app.config(function($routeProvider, $locationProvider){
     $routeProvider
@@ -24,7 +24,14 @@ app.config(function($routeProvider, $locationProvider){
             templateUrl: 'views/login.html',
             controller: 'LoginController'
         });
+        //.when('/reviewForm', {
+        //    templateUrl: 'views/reviewForm.html',
+        //    controller: 'ReviewController'
+    //});
 
 
     $locationProvider.html5Mode(true);
+
+
 });
+

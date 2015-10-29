@@ -24,7 +24,13 @@ module.exports = function(grunt) {
                     "angular-aria/angular-aria.min.js",
                     "angular-material/angular-material.min.js",
                     "angular-route/angular-route.min.js.map",
-                    "bootstrap/dist/*/*"
+                    "bootstrap/dist/*/*",
+                    "angular-leaflet-directive/dist/angular-leaflet-directive.min.js",
+                    "angular-simple-logger/dist/angular-simple-logger.min.js",
+                    "angular-mapbox/dist/angular-mapbox.min.js",
+                    "angular-bootstrap/ui-bootstrap.min.js",
+                    "angular-messages/angular-messages.min.js",
+                    "angular-material/angular-material.min.css"
                 ],
                 "dest": "server/public/vendors/"
             }

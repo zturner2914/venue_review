@@ -11,6 +11,12 @@ var mongoose = require('mongoose');
 var User = require('../models/user');
 var register = require('./routes/register');
 
+
+
+//json router
+var markerData = require('../models/markers');
+
+
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
@@ -77,6 +83,13 @@ passport.deserializeUser(function(id, callback) {
     callback(null,user);
   });
 });
+
+
+app.get('/getMarkers', function(req, res){
+  res.send(markerData);
+});
+
+
 
 app.use('/', routes);
 app.use('/users', users);

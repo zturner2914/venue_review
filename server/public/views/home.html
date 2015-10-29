@@ -1,8 +1,47 @@
-<h2>home</h2>
-<p>{{message}}</p>
-<ul>
-    <li>First Ave</li>
-    <li>Cabooze<button class="venueButton"></button></li>
-    <li>Target Center<button class="venueButton"></button></li>
-    <li>Mill City Nights<button class="venueButton"></button></li>
-</ul>
+<div ng-controller='HomeController'>
+
+
+<mapbox map-id = "zturner29.o0nh36he"
+        width = 100%
+        height = 500
+        lat = "44.97"
+        lng = "-93.265"
+        zoom = "11" scale-to-fit>
+
+    <marker ng-repeat="venues in venues | filter: filterTerm"
+            lat="{{venues.coords.lat}}"
+            lng="{{venues.coords.lng}}"
+            color="black"
+            icon="marker-stroked">
+        <h1><a href="/venuePage">{{venues.name}}</a></h1>
+        <p>{{venues.reviews}}</p>
+    </marker>
+</mapbox>
+<div class="results">
+    <div class="searchbox col-md-6 form-group">
+        <input type="text" placeholder="search venues" class="form-control" ng-model="filterTerm">
+        <ul class="list-unstyled">
+            <li class="well" ng-repeat="venues in venues | filter: filterTerm">
+                <h3>{{venues.name}}</h3>
+                <p>{{venues.image}}</p>
+                <p>Music info</p>
+                <div ng-controller="ReviewController" class="md-padding-dialogdemoBasicUsage" id="popupContainer" ng-cloak="">
+                <md-button ng-click="showAdvanced($event)" flex="100">Add a Review</md-button>
+                </div>
+                <button>See Reviews</button>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--<leaflet center="center" geojson="geojson" markers="markers"  tiles="tiles" width="100%" height="480px"></leaflet>-->
+<!--<pre ng-bind="layers | json"></pre>-->
+<!--<style>-->
+<!--#map {-->
+<!--width: 600px;-->
+<!--height: 400px;-->
+<!--}-->
+<!--</style>-->
+<!--<div id="map"></div>-->
+<!--blah-->
+</div>
