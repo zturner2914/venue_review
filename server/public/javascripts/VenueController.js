@@ -1,23 +1,26 @@
 /**
  * Created by zturner29 on 10/23/15.
  */
-app.controller('VenueController', ['$scope', '$mdDialog', function($scope, $mdDialog){
-
-    $scope.message = "Wheeeee Venue";
-
-
-    var alert;
-    $scope.showDialog = function($event) {
-        alert = $mdDialog.alert({
-            title: 'Attention',
-            content: 'This is an example of how easy dialogs can be!',
-            ok: 'Close'
-        });
-
-        $mdDialog
-            .show( alert )
-            .finally(function() {
-                alert = undefined;
-            });
-    }
-}]);
+//app.controller('VenueController', ['$scope', '$mdDialog', function($scope, $mdDialog){
+//
+//    $scope.message = "Wheeeee Venue";
+//
+//    $scope.rate = 7;
+//    $scope.max = 5;
+//    $scope.isReadonly = false;
+//
+//    $scope.hoveringOver = function(value) {
+//        $scope.overStar = value;
+//        $scope.percent = 100 * (value / $scope.max);
+//    };
+//
+//    $scope.ratingStates = [
+//        {stateOn: 'glyphicon-ok-sign', stateOff: 'glyphicon-ok-circle'},
+//        {stateOn: 'glyphicon-star', stateOff: 'glyphicon-star-empty'},
+//        {stateOn: 'glyphicon-heart', stateOff: 'glyphicon-ban-circle'},
+//        {stateOn: 'glyphicon-heart'},
+//        {stateOff: 'glyphicon-off'}
+//    ];
+//
+//
+//}]);

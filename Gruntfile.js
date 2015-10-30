@@ -30,7 +30,11 @@ module.exports = function(grunt) {
                     "angular-mapbox/dist/angular-mapbox.min.js",
                     "angular-bootstrap/ui-bootstrap.min.js",
                     "angular-messages/angular-messages.min.js",
-                    "angular-material/angular-material.min.css"
+                    "angular-material/angular-material.min.css",
+                    "angular-bootstrap/ui-bootstrap-tpls.min.js",
+                    "angular-ui-bootstrap/ui-bootstrap.min.js",
+                    "angular-ui-bootstrap/ui-bootstrap-csp.css",
+                    "angular-ui-bootstrap/ui-bootstrap-tpls.min.js"
                 ],
                 "dest": "server/public/vendors/"
             }

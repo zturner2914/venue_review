@@ -1,4 +1,4 @@
-var app = angular.module('app', ['ngRoute', 'angular-mapbox', 'ngMaterial']);
+var app = angular.module('app', ['ngRoute', 'angular-mapbox', 'ngMaterial', 'ui.bootstrap','ngAnimate']);
 
 app.config(function($routeProvider, $locationProvider){
     $routeProvider
