@@ -1,17 +1,20 @@
 var mongoose = require('mongoose');
+
 var Schema = mongoose.Schema;
 
 var reviewSchema = new Schema({
-    name: String,
+    show: String,
     date: Date,
-    staff: Number,
+    overStar: Number,
     drink: String,
     nearby: String,
-    comments: String,
-    venue: Number
+    comments: String
 });
 
 
 var Reviews = mongoose.model('Reviews', reviewSchema);
 
-module.exports = Reviews;
+//module.exports = Reviews;
+
+exports.schema = reviewSchema;
+exports.model = Reviews;

@@ -19,27 +19,30 @@ app.controller('HomeController', function($scope, $http, $timeout, mapboxService
 
     $scope.showAdvanced = function(ev,venues){
         $mdDialog.show({
-            controller: DialogController(ev,venues),
+            controller: DialogController,
             templateUrl: 'views/reviewForm.html',
             parent:angular.element(document.body),
             targetEvent: ev,
-            clickOutsideToClose:true
+            clickOutsideToClose:true,
+            resolve:{
+                venues: function() {
+                    return venues;
+                }
+            }
         })
     };
 
 
 
+
 });
 
-function DialogController($scope, venues) {
+function DialogController($scope, venues, $http) {
 
     console.log(venues);
     $scope.rate = 0;
     $scope.max = 5;
-    $scope.something = "something";
-    console.log($scope.something);
 
-    console.log(venues.id);
 
     $scope.hoveringStaff = function (value) {
         $scope.overStar = value;
@@ -48,19 +51,24 @@ function DialogController($scope, venues) {
     };
 
     $scope.sendReview = function (){
-        console.log($scope.overStar);
         var DataToSend = {
-            name:$scope.name,
+            name:$scope.show,
             date: $scope.date,
-            overStar: $scope.number,
+            overStar: $scope.rate,
             drink: $scope.drink,
             nearby: $scope.nearby,
-            comments: $scope.comments
+            comments: $scope.comments,
+            venueDetails: venues
 
         };
+        console.log(DataToSend);
 
-        //http POST
+        // HTTP POST
+        $http.post('/addReview/addReview', DataToSend).then(function(response){
 
+            console.log(response);
+
+        });
 
 
 

@@ -9,14 +9,12 @@ var session = require('express-session');
 var localStrategy = require('passport-local').Strategy;
 var mongoose = require('mongoose');
 var User = require('../models/user');
-var register = require('./routes/register');
-
-
-
-//json router
 var markerData = require('../models/markers');
+var Reviews = require('../models/reviews');
 
 
+var register = require('./routes/register');
+var addReview = require('./routes/add');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
@@ -94,6 +92,7 @@ app.get('/getMarkers', function(req, res){
 app.use('/', routes);
 app.use('/users', users);
 app.use('/register', register);
+app.use('/addReview', addReview);
 
 // catch 404 and forward to error handler
 //app.use(function(req, res, next) {

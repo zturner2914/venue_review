@@ -1,23 +1,19 @@
-<md-dialog aria-label="Review Form">
-    {{something}}
+<md-dialog >
     <md-toolbar>
-        {{something}}
         <div class="md-toolbar-tools">
             <h2>Review Form</h2>
             <span flex></span>
         </div>
     </md-toolbar>
     <md-dialog-content>
-        {{$scope.something}}
-            <label>{{something}}Show Attended:  </label><input type="text" ng-model="show"><br/>
-            <label>Date:  </label><input type="date" ng-model="date"><br/>
-            <label>Staff Friendliest:  </label><uib-rating ng-model="rate" max="max"  on-hover="hoveringStaff(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></uib-rating><br/>
-            <label>Sound Quality: </label><input type="text" ng-model="sound"><br/>
-            <label>Favorite Drink/Cocktail:  </label><input type="text" ng-model="drink"><br/>
-            <label>Nearby Bar/Food Recommendations: </label><input type="text" ng-model="nearby"><br/>
-            <label>Comments: </label><input type="text" ng-model="comments"><br/>
-            <label>Venue Rating: </label><br/>
-            <md-button class="md-raised md-primary" ng-click="sendReview()">Primary</md-button>
+        <label>Show Attended:  </label><input type="text" ng-model="show"><br/>
+        <label>Date:  </label><input type="date" ng-model="date"><br/>
+        <label>Venue Rating:  </label><uib-rating ng-model="rate" max="max"  on-hover="hoveringStaff(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></uib-rating><br/>
+        <label>Favorite Drink/Cocktail:  </label><input type="text" ng-model="drink"><br/>
+        <label>Nearby Bar/Food Recommendations: </label><input type="text" ng-model="nearby"><br/>
+        <label>Comments: </label><input type="text" ng-model="comments"><br/>
+
+        <md-button class="md-raised md-primary" ng-click="sendReview()">Primary</md-button>
     </md-dialog-content>
 
 </md-dialog>

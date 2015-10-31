@@ -2,6 +2,8 @@ var express = require('express');
 var passport = require('passport');
 var path = require('path');
 var router = express.Router();
+var Venue = require('../../models/venue');
+var Review = require('../../models/reviews');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -13,5 +15,32 @@ router.post('/',
         res.send('/users/home');
     }
 );
+
+//router.post('/addReview', function(req, res){
+//
+//    console.log(req.body);
+//
+//
+//    Venue.findOne({id: req.body.venueInfo.id}, function(err, venue){
+//
+//
+//        venue = matched Venue
+//
+//        review obj
+//
+//        venue.reviews.push(req.body);
+//
+//        venue.save(function(err){
+//           if(err) throw err;
+//        });
+//
+//    });
+//
+//
+//
+//
+//});
+
+
 
 module.exports = router;
