@@ -1,7 +1,7 @@
 
 app.controller('HomeController', function($scope, $http, $timeout, mapboxService, $mdDialog) {
 
-
+ $scope.userReviews;
 
 
     mapboxService.init({accessToken:'pk.eyJ1IjoienR1cm5lcjI5IiwiYSI6ImNpZzc0NGphejBleXJ0Ymx6em1yMTUydTQifQ.bdX-UnRHYm7uFZf2tOhudA'});
@@ -32,54 +32,108 @@ app.controller('HomeController', function($scope, $http, $timeout, mapboxService
         })
     };
 
+    //$scope.getData = function(ev, venues){
+    //   $mdDialog.show({
+    //       controller: DialogController,
+    //       templateUrl: 'views/reviewPage.html',
+    //       parent: angular.element(document.body),
+    //       targetEvent: ev,
+    //       clickOutsideToClose: true,
+    //       resolve: {
+    //           venues: function () {
+    //               return venues;
+    //           }
+    //       }
+    //   })
+    //};
 
+    function DialogController($scope, venues, $http) {
+
+        console.log(venues);
+        $scope.rate = 0;
+        $scope.max = 5;
+        $scope.something = "something";
+        $scope.userReviews = "";
+        $scope.rate1 = 0;
+        $scope.rate2 = 0;
+
+
+
+        $scope.hoveringStaff = function (value) {
+            $scope.overStar = value;
+            $scope.percent = 100 * (value / $scope.max);
+            console.log($scope.overStar);
+        };
+
+        $scope.hoveringVenue = function (value) {
+            $scope.overVenue = value;
+            $scope.percent = 100 * (value / $scope.max);
+            console.log($scope.overStar);
+        };
+
+        $scope.hoveringSound = function (value) {
+            $scope.overSound = value;
+            $scope.percent = 100 * (value / $scope.max);
+            console.log($scope.overStar);
+        };
+
+
+
+        $scope.sendReview = function (){
+            var DataToSend = {
+                show:$scope.show,
+                date: $scope.date,
+                overStar: $scope.rate,
+                drink: $scope.drink,
+                nearby: $scope.nearby,
+                comments: $scope.comments,
+                venueDetails: venues
+
+            };
+            console.log(DataToSend);
+            $http.post('/addReview/addReview', DataToSend).then(function(response){
+                console.log(response);
+                console.log(response.config.data);
+                $scope.userReviews = response.config.data;
+            });
+        }
+    }
 
 
 });
 
-function DialogController($scope, venues, $http) {
-
-    console.log(venues);
-    $scope.rate = 0;
-    $scope.max = 5;
-
-
-    $scope.hoveringStaff = function (value) {
-        $scope.overStar = value;
-        $scope.percent = 100 * (value / $scope.max);
-        console.log($scope.overStar);
-    };
-
-    $scope.sendReview = function (){
-        var DataToSend = {
-            name:$scope.show,
-            date: $scope.date,
-            overStar: $scope.rate,
-            drink: $scope.drink,
-            nearby: $scope.nearby,
-            comments: $scope.comments,
-            venueDetails: venues
-
-        };
-        console.log(DataToSend);
-
-        // HTTP POST
-        $http.post('/addReview/addReview', DataToSend).then(function(response){
-
-            console.log(response);
-
-        });
-
-
-
-    }
-
-
-
-
-
-
-}
+//function DialogController($scope, venues, $http) {
+//
+//    console.log(venues);
+//    $scope.rate = 0;
+//    $scope.max = 5;
+//
+//
+//    $scope.hoveringStaff = function (value) {
+//        $scope.overStar = value;
+//        $scope.percent = 100 * (value / $scope.max);
+//        console.log($scope.overStar);
+//    };
+//
+//    $scope.sendReview = function (){
+//        var DataToSend = {
+//            show:$scope.show,
+//            date: $scope.date,
+//            overStar: $scope.rate,
+//            drink: $scope.drink,
+//            nearby: $scope.nearby,
+//            comments: $scope.comments,
+//            venueDetails: venues
+//
+//        };
+//        console.log(DataToSend);
+//        $http.post('/addReview/addReview', DataToSend).then(function(response){
+//            console.log(response);
+//            console.log(response.config.data);
+//            $scope.userReviews = response.config.data;
+//        });
+//    }
+//}
 
     //$scope.sendReview = function(){
     //

@@ -1,5 +1,8 @@
 <div ng-controller='VenueController'>
     <h4>Default</h4>
     <uib-rating ng-model="rate" max="max" readonly="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></uib-rating>
+    <div ng-repeat="userReviews in userReviews">
+        <p>This is something {{userReviews.show}}</p>
 
+    </div>
 </div>

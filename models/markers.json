@@ -2,6 +2,10 @@
   {
     "id": "1",
     "name": "First Ave",
+    "address": "701 First Avenue North, Minneapolis, MN 554403",
+    "phone": "(612)332-1775",
+    "info": "From the avant garde to the mainstream, First Avenue is a music club committed to fostering arts, music and entertainment excellence.",
+    "genre": "mainstream, rock, jamband, indie, rap, hip-hop, electronic, chillwave, pop, folk",
     "coords": {
       "lat": "44.980446",
       "lng": "-93.274369"
@@ -10,6 +14,10 @@
   {
     "id": "2",
     "name": "Dakota Jazz Club",
+    "address": "1010 Nicollet Avenue Minneapolis, MN 55403",
+    "phone": " 612-332-5299",
+    "info": "One of few establishments to serve a full, chef-driven menu paired with world-class music performances seven nights a week, the Dakota is more than a restaurant and more than a music club; it’s where love of great food and great music come together as a seamless duet.",
+    "genre": "classic rock, jazz, motown",
     "coords": {
       "lat": "44.973731",
       "lng": "-93.275239"
@@ -18,6 +26,10 @@
   {
     "id": "3",
     "name": "The Cabooze",
+    "address": "917 Cedar Avenue South Minneapolis, MN 55404",
+    "phone": "612-338-6425",
+    "info": "The Cabooze books bands from all over the world in a variety of styles, including rock, alternative, metal, indie, country, pop, punk, bluegrass, folk, blues, and hip-hop.",
+    "genre": "rock, funk, chillwave, pop, rap, jamband, psychedelic",
     "coords": {
       "lat": "44.963384",
       "lng": "-93.246802"
@@ -26,6 +38,10 @@
   {
     "id": "4",
     "name": "Varisty Theater",
+    "address":"1308 4th Street SE, Minneapolis, MN 55414",
+    "phone": "612-604-0222",
+    "info": "Imagine a venue capable of hosting everything from traditional weddings to Baroque recitals; Shakespearean drama to modern dance performances, psychedelic folk festivals, and cutting-edge New Media trade shows---and yes, the coolest live music by today's new artists of national and international stature. ",
+    "genre": "rock, theater, mainstream, funk, eletronic, folk,",
     "coords": {
       "lat": "44.980567",
       "lng": "-93.236857"
@@ -34,9 +50,69 @@
   {
     "id": "5",
     "name": "Fine Line Music Cafe",
+    "address": "Fine Line Music Cafe 318 First Avenue North, Minneapolis, MN 55401",
+    "phone": "(612) 338-8100",
+    "info": "The Fine Line Music Café is located in the heart of the Warehouse District in downtown Minneapolis. The club is in the main level of the Consortium building, which was built in 1907 and is considered a historic site.",
     "coords": {
       "lat": "44.981936",
       "lng": "-93.271641"
+    }
+  },
+  {
+    "id": "6",
+    "name": "Icehouse",
+    "address": "2528 Nicollet Ave S, Minneapolis, MN 55404",
+    "phone": "(612)-276-6523",
+    "info": "2-story fixture offers American cuisine, drinks & live music in an industrial-chic space.",
+    "coords": {
+      "lat": "44.956193",
+      "lng": "-93.278398"
+    }
+  },
+  {
+    "id": "7",
+    "name": "Turf Club",
+    "address": "1601 University Ave W, St Paul, MN 55104",
+    "phone": "(651)-647-0486",
+    "info": "This no-frills bar & lounge has been hosting live nightly rock performances since the '40s.",
+    "genre": "metal, 80s, punk, indie",
+    "coords": {
+      "lat": "44.955994",
+      "lng": "-93.167962"
+    }
+  },
+  {
+    "id": "8",
+    "name": "The Cabooze",
+    "address": "3090 Southlawn Dr, Saint Paul, MN  55109-1577, United States",
+    "phone": "(651)-779-6984",
+    "info": "Myth Live is a dynamic concert venue and event center located just minutes north of downtown St. Paul, MN. The venue has played host to some of the most exceptional musicians and artists from around the world",
+    "coords": {
+      "lat": "45.034672",
+      "lng": "-93.024578"
+    }
+  },
+  {
+    "id": "9",
+    "name": "Triple Rock Social Club",
+    "address":"629 Cedar Ave. S., Minneapolis",
+    "phone": "(612)-333-7399",
+    "info": "Edgy punk rock club with live music most nights (& jukebox on the others), vegetarian food & bar.",
+    "coords": {
+      "lat": "44.966896",
+      "lng": "-93.246973"
+    }
+  },
+  {
+    "id": "10",
+    "name": "Skyway Theater",
+    "address": "711 Hennepin Ave, Minneapolis, MN 55403",
+    "phone": "(612)-333-6100",
+    "info": "Former cineplex turned cavernous event venue, hosting concerts, movies, dancing & a full bar.",
+    "genre": "club, edm, beats, drum and bass, house, dubstep, jamtronica",
+    "coords": {
+      "lat": "44.977412",
+      "lng": "-93.274927"
     }
   }
   ]

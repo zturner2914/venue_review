@@ -3,6 +3,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var reviewSchema = new Schema({
+    venueID: Schema.Types.ObjectId,
     show: String,
     date: Date,
     overStar: Number,

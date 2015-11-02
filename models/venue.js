@@ -4,13 +4,14 @@ var reviewSchema = require('./reviews').schema;
 
 var venueSchema = new Schema({
 
+
     "id": Number,
     "name": String,
     "coords": {
         "lat": Number,
         "lng": Number
     },
-    reviews:[reviewSchema]
+    reviewsStash:[reviewSchema]
 });
 
 

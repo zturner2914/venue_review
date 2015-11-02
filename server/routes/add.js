@@ -25,28 +25,35 @@ router.post('/addReview', function(req, res, next){
 
         if(err) throw err;
 
-        Venue.findOne({_id: req.body.venuDetails}, function(err, venue){
-            console.log('this is the venue', venue);
-            console.log('this is the review', reviews)
+        Venue.findOne({_id: req.body._id}, function(err, body){
+            console.log('this is the venue', body);
+            console.log('this is the review', reviews);
 
-            if(!venue.reviews){
-                venue.reviews = []
-            }
+            //if(!venue.reviewsStash){
+            //    venue.reviewsStash = []
+            //}
 
             //venue = matched Venue
 
-
-            venue.reviews.push(reviews);
-
-            venue.save(function(err){
-                if(err) throw err;
-            });
+            //
+            //venue.reviewsStash.push(reviews);
+            //
+            //venue.save(function(err){
+            //    if(err) throw err;
+            //});
 
         });
         res.sendStatus(200)
         });
 });
 
+
+router.get('/get', function(request, response, next){
+    Reviews.find({}, function(err, reviews){
+        if(err) throw err;
+        response.send(reviews);
+    });
+});
 
 
 module.exports = router;

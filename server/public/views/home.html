@@ -1,14 +1,14 @@
 <div ng-controller='HomeController'>
 
-
+<div class="mapbox col-md-9">
 <mapbox map-id = "zturner29.o0nh36he"
-        width = 100%
-        height = 500
+        width = 1450
+        height = 600
         lat = "44.97"
         lng = "-93.265"
         zoom = "11" scale-to-fit>
 
-    <marker ng-repeat="venues in venues | filter: filterTerm"
+    <marker class="markers" ng-repeat="venues in venues | filter: filterTerm"
             lat="{{venues.coords.lat}}"
             lng="{{venues.coords.lng}}"
             color="black"
@@ -16,17 +16,21 @@
         <h1><a href="/venuePage">{{venues.name}}</a></h1>
     </marker>
 </mapbox>
+    </div>
 <div class="results">
-    <div class="searchbox col-md-6 form-group">
-        <input type="text" placeholder="search venues" class="form-control" ng-model="filterTerm">
-        <ul class="list-unstyled">
-            <li class="well" ng-repeat="venues in venues | filter: filterTerm">
+    <div class="searchbox col-md-6 form-group" id="maplist">
+        <input id="searchbar" type="text" placeholder="search venues,genres,etc.." class="form-control" ng-model="filterTerm">
+        <ul class="list-unstyled" id="scroll">
+            <li class="well" id="list" ng-repeat="venues in venues | filter: filterTerm">
                 <h3>{{venues.name}}</h3>
+                <p>{{venues.address}}</p>
+                <p>{{venues.phone}}</p>
                 <p>{{venues.info}}</p>
+                <p>{{venues.url}}</p>
                 <!--<div ng-controller="ReviewController" class="md-padding-dialogdemoBasicUsage" id="popupContainer" ng-cloak="">-->
-                    <md-button class="md-primary md-raised" ng-click="showAdvanced($event, venues)" flex-sm="100" flex-md="100" flex-gt-md="auto">Add a Review</md-button>
+                    <md-button class="md-primary md-raised" id="postButton" ng-click="showAdvanced($event, venues)" flex-sm="100" flex-md="100" flex-gt-md="auto">Add Review</md-button>
                 <!--</div>-->
-                <button>See Reviews</button>
+                <md-button class="md-primary md-raised" id="getButton" ng-click="getData($event,venues)">See Reviews</md-button>
             </li>
         </ul>
     </div>
